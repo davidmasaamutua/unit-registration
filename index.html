@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login – Unit Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Login – Unit Registration System</h1>
+        <p>Welcome to the Student Unit Registration Portal.<br>
+        Please log in using your Student Registration Number and Password to access the unit registration system.</p>
+        <p>If you do not have an account, <a href="register.html">click Register</a> to create one.</p>
+        
+        <form id="loginForm">
+            <label for="regNumber">Student Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+            <button type="button" onclick="window.location.href='register.html'">Register New Account</button>
+            <button type="button" onclick="alert('Forgot Password functionality not implemented yet.')">Forgot Password</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

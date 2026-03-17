@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Units for the Semester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register Units for the Semester</h1>
+        <p>Select the units you wish to register for this semester.<br>
+        Ensure that your selection does not exceed the required credit hours.</p>
+        
+        <form id="unitForm">
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option value="Fall 2025">Fall 2025</option>
+                <option value="Spring 2026">Spring 2026</option>
+                <option value="Summer 2026">Summer 2026</option>
+            </select>
+            
+            <fieldset>
+                <legend>List of Available Units</legend>
+                <div id="unitsList">
+                    <!-- Units will be populated by JavaScript -->
+                </div>
+            </fieldset>
+            
+            <button type="submit">Submit Registration</button>
+            <button type="button" onclick="clearSelection()">Clear Selection</button>
+            <button type="button" onclick="logout()">Logout</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
